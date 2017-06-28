@@ -1,0 +1,24 @@
+	<!Doctype HTMl>
+	<html>
+	<head>
+	<title>Profile Page</title>
+	</head>	
+	<body>
+		<h1>
+		Hello 
+		<%= username.upcase%> <!-- here the tag used is basically evaluating the ruby code and returning the output to the brower -->
+		<br>
+		<%= "The Times is #{Time.now}"%> 
+		</h1>
+
+		<h2>
+		<%= time%>
+		</h2>
+
+		<% 10.times do %> <!--  since there is no = sign thus, its just evaluating the ruby code-->
+		<br> <!--  here we can see that anything between the ruby loop gets executed--> 
+		<%= username.upcase%>
+		<% end %>
+
+	</body>
+	</html>
